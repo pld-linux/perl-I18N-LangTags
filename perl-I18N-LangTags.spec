@@ -4,8 +4,8 @@
 Summary:	I18N::LangTags perl module
 Summary(pl):	Modu³ perla I18N::LangTags
 Name:		perl-I18N-LangTags
-Version:	0.26
-Release:	3
+Version:	0.27
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -43,4 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %{perl_sitelib}/I18N/LangTags.pm
+%{perl_sitelib}/I18N/LangTags
 %{_mandir}/man3/*
