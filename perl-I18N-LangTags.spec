@@ -5,12 +5,12 @@ Summary:	I18N::LangTags perl module
 Summary(pl):	Modu³ perla I18N::LangTags
 Name:		perl-I18N-LangTags
 Version:	0.27
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +26,8 @@ z RFC1766.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -40,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/I18N/LangTags.pm
-%{perl_sitelib}/I18N/LangTags
+%{perl_vendorlib}/I18N/LangTags.pm
+%{perl_vendorlib}/I18N/LangTags
 %{_mandir}/man3/*
