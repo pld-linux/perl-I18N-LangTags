@@ -4,8 +4,8 @@
 			# it doesn't like environment set by our automatics
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	I18N
-%define	pnam	LangTags
+%define		pdir	I18N
+%define		pnam	LangTags
 Summary:	I18N::LangTags Perl module - dealing with RFC3066-style language tags
 Summary(pl):	Modu³ Perla I18N::LangTags - obs³uga oznaczeñ jêzyków w stylu RFC3066
 Name:		perl-I18N-LangTags
