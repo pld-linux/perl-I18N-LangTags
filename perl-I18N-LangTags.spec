@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	I18N
 %define	pnam	LangTags
-%include	/usr/lib/rpm/macros.perl
 Summary:	I18N-LangTags perl module
 Summary(pl):	Modu³ perla I18N-LangTags
 Name:		perl-I18N-LangTags
 Version:	0.26
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ I18N-LangTags - funkcje do operowania na oznaczeniach jêzyków zgodnych
 z RFC1766.
 
 %prep
-%setup -q -n I18N-LangTags-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
