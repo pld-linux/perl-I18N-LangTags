@@ -2,8 +2,8 @@
 Summary:	I18N-LangTags perl module
 Summary(pl):	Modu³ perla I18N-LangTags
 Name:		perl-I18N-LangTags
-Version:	0.12
-Release:	3
+Version:	0.13
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/I18N/LangTags
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
