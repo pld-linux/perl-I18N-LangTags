@@ -1,6 +1,7 @@
 #
 # Conditional build:
-%bcond_without	tests	# don't perform "make test"
+%bcond_with	tests	# perform "make test"
+			# it doesn't like environment set by our automatics
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	I18N
