@@ -3,7 +3,7 @@ Summary:	I18N-LangTags perl module
 Summary(pl):	Modu³ perla I18N-LangTags
 Name:		perl-I18N-LangTags
 Version:	0.20
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
