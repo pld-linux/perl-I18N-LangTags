@@ -8,12 +8,12 @@
 Summary:	I18N::LangTags module - dealing with RFC3066-style language tags
 Summary(pl):	Modu³ I18N::LangTags - obs³uga oznaczeñ jêzyków w stylu RFC3066
 Name:		perl-I18N-LangTags
-Version:	0.29
+Version:	0.30
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4c7ea4ee671b58e4088f7791c02fa945
+# Source0-md5:	1c915817f640bb4191bdd80bd61aa75c
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
