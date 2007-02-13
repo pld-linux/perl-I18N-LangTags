@@ -7,7 +7,7 @@
 %define		pdir	I18N
 %define		pnam	LangTags
 Summary:	I18N::LangTags Perl module - dealing with RFC3066-style language tags
-Summary(pl.UTF-8):   Moduł Perla I18N::LangTags - obsługa oznaczeń języków w stylu RFC3066
+Summary(pl.UTF-8):	Moduł Perla I18N::LangTags - obsługa oznaczeń języków w stylu RFC3066
 Name:		perl-I18N-LangTags
 Version:	0.35
 Release:	1
