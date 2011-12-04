@@ -14,8 +14,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/I18N/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	baa1e87e8559f488997081a7cb837f66
+URL:		http://search.cpan.org/dist/I18N-LangTags/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -53,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %{perl_vendorlib}/I18N/LangTags.pm
 %{perl_vendorlib}/I18N/LangTags
-%{_mandir}/man3/*
+%{_mandir}/man3/I18N::LangTags*.3pm*
