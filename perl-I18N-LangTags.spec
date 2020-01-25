@@ -3,7 +3,6 @@
 %bcond_with	tests	# perform "make test"
 			# it doesn't like environment set by our automatics
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	I18N
 %define		pnam	LangTags
 Summary:	I18N::LangTags Perl module - dealing with RFC3066-style language tags
